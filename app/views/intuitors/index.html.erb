@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Avatar</th>
       <th>Photo</th>
       <th>First name</th>
       <th>Last name</th>
@@ -18,6 +19,7 @@
   <tbody>
     <% @intuitors.each do |intuitor| %>
       <tr>
+        <td><%= image_tag intuitor.avatar.url(:thumb) %></td>
         <td><%= intuitor.photo %></td>
         <td><%= intuitor.first_name %></td>
         <td><%= intuitor.last_name %></td>

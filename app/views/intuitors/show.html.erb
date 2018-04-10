@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <%= image_tag @intuitor.avatar.url(:medium) %>
+</p>
+
+<p>
   <strong>Photo:</strong>
   <%= @intuitor.photo %>
 </p>
@@ -13,6 +17,10 @@
 <p>
   <strong>Last name:</strong>
   <%= @intuitor.last_name %>
+</p>
+
+<p>
+<a href="mailto:  <%= @intuitor.mail %> ">Contacter</a>
 </p>
 
 <p>
