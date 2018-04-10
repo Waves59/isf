@@ -84,7 +84,7 @@ d'attester la gravité d'un problème et le crédibiliser.</p>
             <% @intuitors.each do |intuitor| %>
               <div class="cell">
               <p><%= intuitor.first_name + "  " + intuitor.last_name %></p>
-              <%= link_to image_tag(intuitor.avatar.url(:medium), :border => 0, :alt => '', :title => ''), intuitor, :class => 'w3-round responsive-image intuiteur-avatar' %>
+              <%= link_to image_tag(intuitor.avatar.url(:thumb), :border => 0, :alt => '', :title => ''), intuitor, :class => 'w3-round responsive-image intuiteur-avatar' %>
               </div>
             <% end %>
           </div>

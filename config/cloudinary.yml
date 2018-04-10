@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: isf
+  api_key: '823692633133173'
+  api_secret: H_1RoxCcat8-pY7CZmyslLBOOqg
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: isf
+  api_key: '823692633133173'
+  api_secret: H_1RoxCcat8-pY7CZmyslLBOOqg
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: isf
+  api_key: '823692633133173'
+  api_secret: H_1RoxCcat8-pY7CZmyslLBOOqg
+  enhance_image_tag: true
+  static_image_support: false
