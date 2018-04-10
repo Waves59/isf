@@ -198,7 +198,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-text-sand,.w3-hover-text-sand:hover{color:#fdf5e6!important}
 .w3-text-teal,.w3-hover-text-teal:hover{color:#009688!important}
 .w3-text-yellow,.w3-hover-text-yellow:hover{color:#d2be0e!important}
-.w3-text-white,.w3-hover-text-white:hover{color:#fff!important}
+.w3-text-white,.w3-hover-text-white:hover{color:#fff!important;position: absolute;top: 170px;}
 .w3-text-black,.w3-hover-text-black:hover{color:#000!important}
 .w3-text-grey,.w3-hover-text-grey:hover,.w3-text-gray,.w3-hover-text-gray:hover{color:#757575!important}
 .w3-text-light-grey,.w3-hover-text-light-grey:hover,.w3-text-light-gray,.w3-hover-text-light-gray:hover{color:#f1f1f1!important}
@@ -231,11 +231,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#616161!important}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
-.mySlides>img{width: 100%}
+.mySlides>img{    width: 100%;position: relative;top:-145px;}
 .intuiteur-avatar > img {width: 16vw;height: 16vw;clip-path: circle(6vw);margin: auto;}
 .intuiteur-avatar {background-color: white;}
 .w3-round w3-margin-bottom intuiteur-avatar {text-align: center;}
-.slide-size{width: 100vw;height: 45vh;overflow: hidden;background-position:center;}
+.slide-size{    width: 100vw;height: 500px;overflow: hidden;background-position: center;}
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -261,6 +261,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     .cell {
       width: calc(100% / 3);
     }
+    .mySlides > img{top: -405px;}
   }
   .cell {
     margin: 1rem;
@@ -277,3 +278,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
       width: calc(33.3333% - 2rem);
     }
   }
+  
