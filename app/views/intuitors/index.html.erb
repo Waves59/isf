@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Intuitors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Photo</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Diploma</th>
+      <th>Description</th>
+      <th>Website</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @intuitors.each do |intuitor| %>
+      <tr>
+        <td><%= intuitor.photo %></td>
+        <td><%= intuitor.first_name %></td>
+        <td><%= intuitor.last_name %></td>
+        <td><%= intuitor.diploma %></td>
+        <td><%= intuitor.description %></td>
+        <td><%= intuitor.website %></td>
+        <td><%= link_to 'Show', intuitor %></td>
+        <td><%= link_to 'Edit', edit_intuitor_path(intuitor) %></td>
+        <td><%= link_to 'Destroy', intuitor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Intuitor', new_intuitor_path %>

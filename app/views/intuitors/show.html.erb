@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= @intuitor.photo %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @intuitor.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @intuitor.last_name %>
+</p>
+
+<p>
+  <strong>Diploma:</strong>
+  <%= @intuitor.diploma %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @intuitor.description %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @intuitor.website %>
+</p>
+
+<%= link_to 'Edit', edit_intuitor_path(@intuitor) %> |
+<%= link_to 'Back', intuitors_path %>

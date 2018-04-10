@@ -1,0 +1,2 @@
+class Intuitor < ApplicationRecord
+end

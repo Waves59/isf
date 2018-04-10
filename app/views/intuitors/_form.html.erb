@@ -1,0 +1,47 @@
+<%= form_with(model: intuitor, local: true) do |form| %>
+  <% if intuitor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(intuitor.errors.count, "error") %> prohibited this intuitor from being saved:</h2>
+
+      <ul>
+      <% intuitor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.text_field :photo, id: :intuitor_photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, id: :intuitor_first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, id: :intuitor_last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diploma %>
+    <%= form.text_field :diploma, id: :intuitor_diploma %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :intuitor_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website %>
+    <%= form.text_field :website, id: :intuitor_website %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
