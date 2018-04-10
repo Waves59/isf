@@ -6,21 +6,21 @@
     <%= image_tag("slide1.jpg", :alt => "fillette et renard") %>
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <p><b>We had the best time playing at Venice Beach!</b></p>
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <%= image_tag("slide2.jpg", :alt => "femme et chameau") %>
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
     <%= image_tag("slide3.jpg", :alt => "femme et éléphant") %>
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>
     </div>
   </div>
 
@@ -28,45 +28,54 @@
   // Automatic Slideshow - change image every 4 seconds
   var myIndex = 0;
   carousel();
-  
+
   function carousel() {
       var i;
       var x = document.getElementsByClassName("mySlides");
       for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
+         x[i].style.display = "none";
       }
       myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 6000);    
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 6000);
   }
 </script>
 
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">NOTRE VISION</h2>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">L'ISF partage les valeurs des associations telles que TAAC (The Animal Alliance Channel).
+Pour nous, l'animal possède plusieurs capacités humanisantes.
+L'animal pacifie les relations : En milieu carcéral par exemple, le contact animal détourne
+l'attention des tensions et deviens un sujet de conversation partagé et apporte de la
+chaleur dans des lieux déshumanisés.
+Il éveille, élargit notre conscience : Il existe des pédagogies et programmes d'éveil pour
+aider les enfants à développer leur potentiel émotionnel et relationnel, l'intuition,
+l'empathie, le sens de la responsabilité, l'éthique animale.
+L'animal soigne l'esprit : Il est capable de consoler, d'apporter du soin et parfois de
+guérir (enfants autistes, adolescents anorexiques, personnes handicapées, personnes
+dépressives ou encore personnes âgées placées dans des institutions spécialisées).</p>
   </div>
 
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">NOTRE BUT</h2>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">Nous travaillons main dans la main avec des professionnels, vétérinaires, traducteurs, et
+autres afin de créer des équipes répondant le plus efficacement à la demande. Nous
+cherchons à solver les problèmes d'ampleur impliquant humains et animaux.</p>
   </div>
 
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">NOS OBJECTIFS</h2>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="w3-justify">Nous visons à travailler sur 5 à 8 projets par ans afin de pouvoir consacrer une attention
+particulière à une situation grave à grande échelle. Un nombre réduit d'opérations
+permet tout d'abord à notre équipe de réaliser des projets personnels, mais surtout
+d'attester la gravité d'un problème et le crédibiliser.</p>
   </div>
 
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">L'ÉQUIPES</h2>
+      <h2 class="w3-wide w3-center">L'ÉQUIPE</h2>
       <p class="w3-opacity w3-center"><i>Voici la liste de nos intuiteurs</i></p><br>
 
       <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
@@ -90,8 +99,8 @@
   <!-- Ticket Modal -->
   <div id="ticketModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+      <header class="w3-container w3-teal w3-center w3-padding-32">
+        <span onclick="document.getElementById('ticketModal').style.display='none'"
        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
         <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
       </header>
@@ -133,6 +142,6 @@
       </div>
     </div>
   </div>
-  
+
 <!-- End Page Content -->
 </div>
