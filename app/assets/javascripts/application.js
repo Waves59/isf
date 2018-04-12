@@ -11,9 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require_tree .
-
+//= require_self
 
 
 // Automatic Slideshow - change image every 4 seconds
