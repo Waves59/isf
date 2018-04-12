@@ -7323,5 +7323,8 @@ button.close {
     display: none !important;
   }
 }
+.text-justify {
+  text-align: justify;
+}
 
 /*# sourceMappingURL=bootstrap.css.map */
