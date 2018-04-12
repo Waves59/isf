@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180411131856) do
+ActiveRecord::Schema.define(version: 20180411142753) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,9 @@ ActiveRecord::Schema.define(version: 20180411131856) do
     t.integer "avatar_file_size"
     t.datetime "avatar_updated_at"
     t.string "mail"
+    t.bigint "category_id"
+    t.index ["category_id"], name: "index_intuitors_on_category_id"
   end
 
+  add_foreign_key "intuitors", "categories"
 end
