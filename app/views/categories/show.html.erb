@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<article>
+  <p>
+    <strong>Title:</strong>
+    <%= @category.title %>
+  </p>
+</article>
+<section>
+
+  <% @category.intuitors.each do |intuitor| %>
+    <h1><%= intuitor.first_name + intuitor.last_name %></h1>
+    
+  <% end %>
+
+</section>
+  
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>
