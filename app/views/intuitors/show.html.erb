@@ -1,38 +1,39 @@
 <div class="container-intuit"></div>
 <p id="notice"><%= notice %></p>
-<div class="img-intuit">
-<p>
-  <%= image_tag @intuitor.avatar.url(:medium) %>
-</p>
+<div class="intuit">
+
+    <%= image_tag @intuitor.avatar.url(:medium) %>
+
+
+  <p>
+    <strong>First name:</strong>
+    <%= @intuitor.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @intuitor.last_name %>
+  </p>
+
+  <p>
+  <a href="mailto:  <%= @intuitor.mail %> ">Contacter</a>
+  </p>
+
+  <p>
+    <strong>Diploma:</strong>
+    <%= @intuitor.diploma %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= @intuitor.description %>
+  </p>
+
+  <p>
+    <strong>Website:</strong>
+    <%= @intuitor.website %>
+  </p>
+
+  <%= link_to 'Edit', edit_intuitor_path(@intuitor) %> |
+  <%= link_to 'Back', intuitors_path %>
 </div>
-<p>
-  <strong>First name:</strong>
-  <%= @intuitor.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @intuitor.last_name %>
-</p>
-
-<p>
-<a href="mailto:  <%= @intuitor.mail %> ">Contacter</a>
-</p>
-
-<p>
-  <strong>Diploma:</strong>
-  <%= @intuitor.diploma %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @intuitor.description %>
-</p>
-
-<p>
-  <strong>Website:</strong>
-  <%= @intuitor.website %>
-</p>
-
-<%= link_to 'Edit', edit_intuitor_path(@intuitor) %> |
-<%= link_to 'Back', intuitors_path %>

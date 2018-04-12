@@ -281,3 +281,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   }
 .logo1 {width: 4.5%;height: 4.5%;float: left;}
 .logo2 {width: 100px;height: 100px;}
+.intuit{text-align: center;
+    margin: 120px;}
+.intuit > img {border-radius: 100%}
+
+body{
+	background-color: #ecebeb;
+}
