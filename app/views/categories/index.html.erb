@@ -1,20 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Categories</h1>
 
-<div class="container">
-  <div class="grid">
-    <% @categories.each do |category| %>
-        <div class="cell">
-          <div class="titre-categorie"><%= category.title %>
-          <%= link_to image_tag(category.image.url(:medium), :border => 0), category, :class => 'w3-round responsive-image intuiteur-avatar' %>
+<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box fadeInUp animated">
+                <h3>Les intuiteurs sont là pour répondre à vos questions</h3>
+                <p>Sélectionner la catégorie correspondant à votre animal et remplisser notre formulaire</p>
+            </div>
+<div class="album py-5 bg-light">
+        <div class="container">
+        <% @categories.each do |category| %>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="category.image.url" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text"><%= category.title %></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                        <%= link_to 'Modifier', edit_category_path(category) %>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">
+                      <%= link_to "Supprimer", @category, :confirm => "Are you sure?", :method => :delete %>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
         </div>
-        </div>
-    <% end %>
-  </div>
-</div>
+</div>  
 
 
 <br>
-
+<button type="button" class="btn btn-sm btn-outline-secondary">
 <%= link_to 'Ajouter une catégorie', new_category_path %>
+</button>
