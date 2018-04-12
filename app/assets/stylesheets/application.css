@@ -238,7 +238,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-round w3-margin-bottom intuiteur-avatar {text-align: center;}
 .slide-size{width: 100vw;height: 500px;overflow: hidden;background-position: center;}
 .container {
-    margin: 0 auto;
+    margin: 200px auto;
     max-width: 1200px;
     padding: 0 1rem;
   }
@@ -281,3 +281,23 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   }
 .logo1 {width: 4.5%;height: 4.5%;float: left;}
 .logo2 {width: 100px;height: 100px;}
+.container-intuit{
+  text-align: center;
+  margin: 150px;
+}
+.container-intuit a{
+  background-color: #725322;
+  display: block; 
+  padding: 10px;
+  text-decoration: none;
+  color: #ffff;
+  width: 200px;
+  margin: auto;
+}
+.img-intuit img {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  margin: 50px;
+}
+

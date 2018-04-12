@@ -10,6 +10,7 @@ class IntuitorsController < ApplicationController
   # GET /intuitors/1
   # GET /intuitors/1.json
   def show
+
   end
 
   # GET /intuitors/new
