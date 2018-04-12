@@ -7,3 +7,20 @@
 .img-responsive{
     height: 5vh;
 }
+.card-text {
+    position:relative;
+    top: -150px;
+    font-size: 3em;
+    color: #ff5722;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+.resize-card img{
+    height: 225px;
+    width: 100%;
+    display: block;
+}
+.btn:hover {
+    background: #edeff3!important;
+}
