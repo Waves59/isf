@@ -72,6 +72,6 @@ class IntuitorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def intuitor_params
-      params.require(:intuitor).permit(:category, :avatar, :mail, :first_name, :last_name, :diploma, :description, :website)
+      params.require(:intuitor).permit(:avatar, :mail, :first_name, :last_name, :diploma, :description, :website)
     end
 end

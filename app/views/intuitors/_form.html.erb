@@ -42,13 +42,6 @@
   </div>
 
   <div class="field">
-  <%= f.label :description %>
-  <%= f.text_area :description, id: :intuitor_description %>
-  </div>
-  <div class="field">
-    <%= f.select :category_id, Category.all.collect { |p| [ p.title, p.id ] }%>
-  </div>
-  <div class="field">
     <%= f.label :website %>
     <%= f.text_field :website, id: :intuitor_website %>
   </div>
