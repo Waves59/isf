@@ -1,7 +1,22 @@
 <p id="notice"><%= notice %></p>
 <button type="button" class="btn btn-sm btn-outline-secondary">
-<%= link_to '< Retour', categories_path %>
+    <%= link_to '< Retour', categories_path %>
 </button>
   
+%p
+  Un nouveau message a été envoyé depuis le site :
+%p
+  %strong= "Nom : "
+  = @contact.lastname
+  %br
+  %strong= "Prénom : "
+  = @contact.firstname
+  %br
+  %strong= "Adresse email : "
+  = @contact.email
+  %br
+  %strong= "Message : "
+  %br
+  = simple_format @contact.message
 
 

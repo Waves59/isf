@@ -1,5 +1,14 @@
 class EmailMailer < ApplicationMailer
-    def question
-        mail to: "thibault.demars59@gmail.com", subject: ""
+    
+    layout 'mailer'
+ 
+    def contact_form(contact)
+      @contact = contact
+      @to = "isf@gmail.com"
+   
+      mail(to: @to, subject: "Provient de la plateforme ISF") do |format|
+        format.html
+      end
     end
+
 end
