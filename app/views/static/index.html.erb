@@ -14,8 +14,12 @@
 </div>
 
 
-	<div class="row" style="margin-top: 100px;">
-		<div class="col-md-6 heading-section text-justify padding">
+	<div class="row col-md-12 " style="margin-top: 100px; margin-left: 50px;">
+		 
+		<div class="pro1"><%= image_tag "Professionnel.jpg", :class =>"pro"; %> </div>
+            
+            <div class="col-md-4  heading-section text-justify ">
+          
                 <h3><strong>NOTRE VISION</strong></h3><br><br>
 L'ISF partage les valeurs des associations telles que TAAC (The Animal Alliance Channel). Pour nous, l'animal possède plusieurs capacités humanisantes.
 L'animal pacifie les relations : En milieu carcéral par exemple, le contact animal détourne l'attention des tensions et deviens un sujet de conversation partagé et apporte de la chaleur dans des lieux déshumanisés.
@@ -26,21 +30,15 @@ L'animal soigne l'esprit : Il est capable de consoler, d'apporter du soin et par
                 <h3><strong>NOTRE BUT</strong></h3><br><br>
 Nous travaillons main dans la main avec des professionnels, vétérinaires, traducteurs, et autres afin de créer des équipes répondant le plus efficacement à la demande. Nous cherchons à solver les problèmes d'ampleur impliquant humains et animaux.<p>
             </div>
-			</div>
-
-			<div class="container">
-			  <div class="row">
-				  <div class="col-md-4">
-					<div class="card mb-2 box-shadow">
-					<%= image_tag "Professionnel.jpg", :class =>"card-img-top pro"%>
-					  </div>
-					</div>
-				  </div>
-			  </div>
-			</div>
-	  </div>     
-	</div>
-</div>
+            <div class=" heading-section text-justify ">
+               
+                <h3><strong>NOTRE OBJECTIF</strong></h3><br><br>
+Nous visons à travailler sur 5 à 8 projets par ans afin de pouvoir consacrer une attention particulière à une situation grave à grande échelle. Un nombre réduit d'opérations permet tout d'abord à notre équipe de réaliser des projets personnels, mais surtout d'attester la gravité d'un problème et le crédibiliser.
+<p>
+            </div>
+            </div>
+            
+        </div>
 
 
 
@@ -57,7 +55,7 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
 					</span>
 					<div class="feature-copy">
 						<h3>Notre équipe</h3>
-						<p>Notre équipe de professionels est à l'écoute des animaux, mais aussi des humains ! N'hésitez pas à poser vos questions.</p>
+						<p>Notre équipe de professionnels est à l'écoute des animaux, mais aussi des humains ! N'hésitez pas à poser vos questions.</p>
 					</div>
 				</div>
 
@@ -70,7 +68,7 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
 					</span>
 					<div class="feature-copy">
 						<h3>Objectif</h3>
-						<p>Le bonheur des animaux est notre prioritée, nous mettons tout en œuvre pour leur bien être.</p>
+						<p>Le bonheur des animaux est notre priorité, nous mettons tout en œuvre pour leur bien-être.</p>
 					</div>
 				</div>
 
@@ -82,7 +80,7 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
 					</span>
 					<div class="feature-copy">
 						<h3>Services</h3>
-						<p>Nous proposons les services d'intuiteurs qualifiés, pour aider spychologiquement vos animaux</p>
+						<p>Nous proposons les services d'intuiteurs qualifiés, pour aider psychologiquement vos animaux</p>
 					</div>
 				</div>
 			</div>
@@ -125,13 +123,11 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
 	</div>
 
 	</br>
-	<% if(user_signed_in?) %>
 	<div class="col-sm-12 text-center padding">
 			<button type="button" class="btn btn-sm btn-outline-secondary text-center">
 				<%= link_to 'Gérer les Intuiteurs', '/intuitors' %>
 			</button>
 	</div>
-	<% end %>
 </div>
 
 
