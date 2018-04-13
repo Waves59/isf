@@ -2,28 +2,26 @@
 <button type="button" class="btn btn-sm btn-outline-secondary">
     <%= link_to '< Retour', categories_path %>
 </button>
-  
-<div align="center">
-  <h3>Envoyer votre demande aux intuiteurs</h3>
+<div class="container center">  
+    <h3>Envoyer votre demande aux intuiteurs</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :category, :required => true %>
-    <%= f.input :first_name, :required => true %>
-    <%= f.input :last_name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :phone_number %>
-    <%= f.input :company %>
-    <%= f.input :attitude %>
-    <%= f.input :photo, :as => :file %>
-    <%= f.input :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
-    </div>
-    <div>
-    <p>Les champs suivis d'une * sont obligatoire</p>
-    </br>
-    <%= f.button :submit, 'Envoyer votre demande', :class=> "btn btn-primary" %>
-    </div>
-  <% end %>
+    <%= simple_form_for @contact, :html => {:class => 'form-group' } do |f| %>
+      <%= f.input :category, :label => "Catégorie", input_html: { value: @category.title, :class => "form-control" }, :required => true %>
+      <%= f.input :first_name,  :label => "Prénom", input_html: { :class => "form-control" }, :required => true %>
+      <%= f.input :last_name,  :label => "Nom", input_html: { :class => "form-control" }, :required => true %>
+      <%= f.input :email, :label => "Email", input_html: { :class => "form-control" }, :required => true %>
+      <%= f.input :phone_number, :label => "Numéro de téléphone", input_html: { :class => "form-control" } %>
+      <%= f.input :company, :label => "Nom de l'entreprise",input_html: { :class => "form-control" } %>
+      <%= f.input :attitude, :label => "Attitude de l'animal(agressif, calme..)",input_html: { :class => "form-control" }%>
+      <%= f.input :photo, :as => :file, input_html: { :class => "form-control" } %>
+      <%= f.input :message, :as => :text, :required => true, input_html: { :class => "form-control" } %>
+      <div class= "hidden">
+        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+      </div>
+      <div>
+      <p>Les champs suivis d'une * sont obligatoire</p>
+      </br>
+      <%= f.button :submit, 'Envoyer votre demande', :class=> "btn btn-primary" %>
+      </div>
+    <% end %>
 </div>
-</br>
