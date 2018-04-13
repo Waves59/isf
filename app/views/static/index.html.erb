@@ -125,11 +125,13 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
 	</div>
 
 	</br>
+	<% if(user_signed_in?) %>
 	<div class="col-sm-12 text-center padding">
 			<button type="button" class="btn btn-sm btn-outline-secondary text-center">
 				<%= link_to 'Gérer les Intuiteurs', '/intuitors' %>
 			</button>
 	</div>
+	<% end %>
 </div>
 
 

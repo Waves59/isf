@@ -1,7 +1,7 @@
 class IntuitorsController < ApplicationController
   before_action :set_intuitor, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index ,:show]
 
-  http_basic_authenticate_with name: ENV['LOGIN'], password: ENV['PASSWORD'], except: [:index, :show] if Rails.env.production?
 
   # GET /intuitors
   # GET /intuitors.json
