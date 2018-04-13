@@ -7,4 +7,6 @@
 //= require theme/hoverIntent.js
 //= require theme/superfish.js
 //= require theme/main.js
+//= require jquery_ujs
+//= require_tree .
 //= require_self
