@@ -1481,11 +1481,11 @@ figure {
 }
 .pro {
   width: 30%;
-  height: 60%;
+  height: 40%;
   float: right;
-
-
-
+}
+.color42{
+color: white ;
 
 }
 /*# sourceMappingURL=style.css.map */
