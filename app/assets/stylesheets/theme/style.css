@@ -1473,9 +1473,9 @@ figure {
   margin-bottom: 100px;
 }
 .logo3{
-  margin-top: 20px;
+  margin-top: 40px;
   height: 30%;
-  width: 20%;
+  width: 18%;
   z-index: 0;
   text-align: center;
 }
@@ -1483,9 +1483,9 @@ figure {
   width: 30%;
   height: 40%;
   float: right;
+  margin-right:150px;
 }
 .color42{
 color: white ;
 
 }
-/*# sourceMappingURL=style.css.map */
