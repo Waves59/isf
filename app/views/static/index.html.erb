@@ -98,6 +98,7 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
     <div class="container">
 		<div class="row">
 			<% @intuitors.each do |intuitor| %>
+				<%= link_to(intuitor) do %>
 				<div class="col-md-4">
 					<div class="fh5co-team text-center animate-box">
 						<figure>
@@ -109,17 +110,21 @@ Nous travaillons main dans la main avec des professionnels, vétérinaires, tr
 							<p><span><%= intuitor.diploma %></span></p>
 							<p><%= intuitor.description.truncate(50) %></p>
 						</div>
-						
-						<p class="fh5co-social-icons">
-							<a href="#"><i class="icon-twitter2"></i></a>
-							<a href="#"><i class="icon-linkedin2"></i></a>
-							<a href="#"><i class="icon-facebook3"></i></a>
-						</p>
+				
 					</div>
 				</div>
+				<% end %>
+
 			<% end %>
         </div>
-    </div>
+	</div>
+
+	</br>
+	<div class="col-sm-12 text-center padding">
+			<button type="button" class="btn btn-sm btn-outline-secondary text-center">
+				<%= link_to 'Gérer les Intuiteurs', '/intuitors' %>
+			</button>
+	</div>
 </div>
 
 

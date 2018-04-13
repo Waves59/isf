@@ -18,6 +18,7 @@
 
   <tbody>
     <% @intuitors.each do |intuitor| %>
+
       <tr>
         <td><%= image_tag intuitor.avatar.url(:thumb) %></td>
         <td><%= intuitor.first_name %></td>
