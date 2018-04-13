@@ -14,7 +14,7 @@ class Contact < MailForm::Base
     def headers
       {
         :subject => "Un utilisateur ISF à besoin de votre aide !",
-        :to => "thibault.demars59@gmail.com",
+        :to => "isf.contact.intuiteurs@gmail.com",
         :from => %("#{first_name} #{last_name}" <#{email}>)
       }
     end
