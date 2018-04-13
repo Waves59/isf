@@ -1480,11 +1480,14 @@ figure {
   text-align: center;
 }
 .pro {
-  width: 30%;
-  height: 40%;
+  width: 40%;
+  height: 50%;
   float: right;
   margin-right:150px;
 }
+.pro1 { 
+
+margin-right: 150px; }
 .color42{
 color: white ;
 
