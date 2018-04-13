@@ -40,12 +40,19 @@
                   <li>
                     <%= link_to 'À propos', about_url %>
                   </li>
+                  <% if(user_signed_in?) %>
+                  <li>
+                    <%= link_to 'Déconnexion', destroy_user_session_path, method: :delete %>
+                  </li>
+                  <% end %>
                 </ul>
               </nav>
             </div>
           </div>
         </header>
         <%= yield %>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
         <footer>
           <div id="footer">
             <div class="container">

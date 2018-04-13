@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'rails-erd'
 gem 'mail_form'
-
+gem 'devise'
 #gestion avatar
 gem 'paperclip'
 gem 'paperclip-cloudinary'
