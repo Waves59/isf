@@ -1,6 +1,12 @@
 class Contact < MailForm::Base
-    attribute :name,      :validate => true
+    attribute :category,  :validate => true
+    attribute :first_name,      :validate => true
+    attribute :last_name,      :validate => true
     attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+    attribute :phone_number
+    attribute :company
+    attribute :attitude, :validate => true
+    attribute :photo
     attribute :message
     attribute :nickname,  :captcha  => true
   
