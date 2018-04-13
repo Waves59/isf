@@ -1472,4 +1472,20 @@ figure {
 .container-about{
   margin-bottom: 100px;
 }
+.logo3{
+  margin-top: 20px;
+  height: 30%;
+  width: 20%;
+  z-index: 0;
+  text-align: center;
+}
+.pro {
+  width: 30%;
+  height: 60%;
+  float: right;
+
+
+
+
+}
 /*# sourceMappingURL=style.css.map */
