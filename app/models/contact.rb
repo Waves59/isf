@@ -6,7 +6,6 @@ class Contact < MailForm::Base
     attribute :phone_number
     attribute :company
     attribute :attitude, :validate => true
-    attribute :photo
     attribute :message
     attribute :nickname,  :captcha  => true
   
