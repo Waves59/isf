@@ -1,85 +1,46 @@
 <div class="container-intuit">
-  <p id="notice"><%= notice %></p>
-  <div class="img-intuit">
-  <p>
-    <%= image_tag @intuitor.avatar.url(:medium) %>
-  </p>
-  </div>
-  <p>
-    <strong>Prénom:</strong>
-    <%= @intuitor.first_name %>
-  </p>
+  <p id="notice"><%= notice %></p> 
 
-  <p>
-    <strong>Nom:</strong>
-    <%= @intuitor.last_name %>
-  </p>
-
-  <p>
-    <strong>Diplôme:</strong>
-    <%= @intuitor.diploma %>
-  </p>
-
-  <p>
-    <strong>Catégorie:</strong>
-    <%= @intuitor.category.title %>
-  <p>
-
-  <p>
-    <a href="mailto:  <%= @intuitor.mail %> ">Contacter</a>
-  </p>
-  <p>
-  <%= @intuitor.description %>
-  </p>
-
-  <p>
-    <%= @intuitor.website %>
-  </p>
-
-
-  <p>
-  <a href="mailto:  <%= @intuitor.mail %> ">Contacter</a>
-  </p>
-  <p>
-  <%= link_to 'Modifier', edit_intuitor_path(@intuitor) %>
-  </p>
-  <p>
-  <%= link_to 'Liste des intuiteurs', intuitors_path %>
-  </p>
-</div>
-
-
-
-<div id="fh5co-content-section" class="fh5co-section-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
-                <h3>Intuiteurs</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est facilis maiores, perspiciatis accusamus asperiores sint consequuntur debitis.</p>
-            </div>
-        </div>
+<div class="container">
+    <div class="span3 well">
+        <center>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="<%= @intuitor.avatar.url %>" name="aboutme" width="140" height="140" class="img-circle"></a>
+        <h3><%= @intuitor.to_s %></h3>
+        <p><%= @intuitor.diploma %></p>
+        <em><a class="btn btn-secondary" href="mailto:  <%= @intuitor.mail %>" role="button">Contacter »</a></em>
+		</center>
     </div>
-    <div class="container">
-		<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-team text-center animate-box">
-						<figure>
-							<%= image_tag @intuitor.avatar.url(:medium), alt: @intuitor.to_s %>
-						</figure>
-
-						<div>
-							<h3><%= @intuitor %></h3>
-							<p><span><%= @intuitor.diploma %></span></p>
-							<p><%= @intuitor.description.truncate(50) %></p>
-						</div>
-						
-						<p class="fh5co-social-icons">
-							<a href="#"><i class="icon-twitter2"></i></a>
-							<a href="#"><i class="icon-linkedin2"></i></a>
-							<a href="#"><i class="icon-facebook3"></i></a>
-						</p>
-					</div>
-				</div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About Joe</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+                    <span><strong>Skills: </strong></span>
+                        <span class="label label-warning">HTML5/CSS</span>
+                        <span class="label label-info">Adobe CS 5.5</span>
+                        <span class="label label-info">Microsoft Office</span>
+                        <span class="label label-success">Windows XP, Vista, 7</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Joe</button>
+                    </center>
+                </div>
+            </div>
         </div>
     </div>
 </div>

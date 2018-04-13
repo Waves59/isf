@@ -16,7 +16,7 @@ class Contact < MailForm::Base
       {
         :subject => "Un utilisateur ISF à besoin de votre aide !",
         :to => "thibault.demars59@gmail.com",
-        :from => %("#{name}" <#{email}>)
+        :from => %("#{first_name} #{last_name}" <#{email}>)
       }
     end
   end

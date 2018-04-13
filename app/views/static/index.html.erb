@@ -67,6 +67,7 @@
     <div class="container">
 		<div class="row">
 			<% @intuitors.each do |intuitor| %>
+				<%= link_to(intuitor) do %>
 				<div class="col-md-4">
 					<div class="fh5co-team text-center animate-box">
 						<figure>
@@ -81,6 +82,7 @@
 				
 					</div>
 				</div>
+				<% end %>
 
 			<% end %>
         </div>
